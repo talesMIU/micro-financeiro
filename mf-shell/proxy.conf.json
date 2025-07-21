@@ -1,0 +1,14 @@
+{
+  "/mf-1": {
+    "target": "http://localhost:4201",
+    "secure": false,
+    "pathRewrite": {"^/mf-1": ""},
+    "changeOrigin": true
+  },
+  "/mf-2": {
+    "target": "http://localhost:4202",
+    "secure": false,
+    "pathRewrite": {"^/mf-2": ""},
+    "changeOrigin": true
+  }
+}
