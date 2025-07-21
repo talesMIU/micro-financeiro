@@ -43,7 +43,10 @@
 						"outputPath": "dist/mf-1",
 						"index": "src\\index.html",
 						"extraWebpackConfig": "webpack.config.js",
-						"commonChunk": false
+						"commonChunk": false,
+						"allowedCommonJsDependencies": [
+							"@angular-architects/module-federation"
+						]
 					},
 					"configurations": {
 						"production": {

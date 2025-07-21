@@ -41,11 +41,14 @@
 						],
 						"main": "src/main.ts",
 						"outputPath": "dist/mf-shell",
-						"index": "src\\index.html",
+						"index": "src/index.html",
 						"extraWebpackConfig": "webpack.extra.config.js",
 						"commonChunk": false,
 						"outputHashing": "all",
-						"crossOrigin": "anonymous"
+						"crossOrigin": "anonymous",
+						"allowedCommonJsDependencies": [
+							"@angular-architects/module-federation"
+						]
 					},
 					"configurations": {
 						"production": {
@@ -77,12 +80,10 @@
 					"configurations": {
 						"production": {
 							"buildTarget": "mf-shell:build:production",
-							"extraWebpackConfig": "webpack.prod.config.js",
 							"proxyConfig": "proxy.conf.json"
 						},
 						"development": {
 							"buildTarget": "mf-shell:build:development",
-							"extraWebpackConfig": "webpack.config.js",
 							"proxyConfig": "proxy.conf.json"
 						}
 					},
@@ -98,7 +99,7 @@
 					}
 				},
 				"extract-i18n": {
-					"builder": "@angular/build:extract-i18n"
+					"builder": "@angular-devkit/build-angular:extract-i18n"
 				},
 				"test": {
 					"builder": "@angular/build:karma",

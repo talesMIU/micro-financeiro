@@ -24,6 +24,9 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
+						"allowedCommonJsDependencies": [
+							"@angular-architects/module-federation"
+						],
 						"polyfills": [
 							"zone.js"
 						],
@@ -68,7 +71,7 @@
 							"sourceMap": true
 						}
 					},
-					"defaultConfiguration": "production"
+					"defaultConfiguration": "production",
 				},
 				"serve": {
 					"builder": "ngx-build-plus:dev-server",

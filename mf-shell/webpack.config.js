@@ -3,8 +3,8 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 const mfConfig = withModuleFederationPlugin({
   name: 'mf-shell', // Nome único para o shell
   remotes: {
-    "micro1": "http://localhost:4201/remoteEntry.js",
-    "micro2": "http://localhost:4202/remoteEntry.js",    
+    "mf-1": "http://localhost:4201/remoteEntry.js",
+    "mf-2": "http://localhost:4202/remoteEntry.js",    
   },
   shared: {
     ...shareAll({ 

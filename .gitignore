@@ -1,0 +1,13 @@
+# Dependências
+node_modules/
+dist/
+.temp/
+
+# Ambiente
+.env
+*.log
+
+# IDEs
+.idea/
+.vscode/
+*.swp
