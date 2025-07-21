@@ -12,8 +12,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' })
+    AppRoutingModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
